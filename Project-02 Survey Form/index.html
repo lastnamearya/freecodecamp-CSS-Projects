@@ -22,56 +22,86 @@
 
       <div class="basic-info">
         <div class="name">
-          <label for="name" id="name-label" class="label-light">* Name:</label>
-          <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          <div class="label">
+            <label for="name" id="name-label" class="label-light">* Name:</label></div>
+          <div class="options">
+            <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          </div>
         </div>
 
         <div class="mail">
-          <label for="email" id="email-label" class="label-light">* Email:</label>
-          <input type="email" id="email" name="user_email" placeholder="Enter your Email" required>
+          <div class="label">
+            <label for="email" id="email-label" class="label-light">* Email:</label></div>
+          <div class="options">
+            <input type="email" id="email" name="user_email" placeholder="Enter your Email" required>
+          </div>
         </div>
 
         <div class="age">
-          <label for="number" id="number-label" class="label-light">* Age:</label>
-          <input type="number" id="number" name="user_age" min="1" max="125" placeholder="Age" required>
+          <div class="label">
+            <label for="number" id="number-label" class="label-light">* Age:</label>
+          </div>
+          <div class="options">
+            <input type="number" id="number" name="user_age" min="1" max="125" placeholder="Age" required>
+          </div>
         </div>
 
       </div>
 
       <div class="option">
-        <label for="currentPos">Which option best describes your current role?</label>
-        <select name="position" id="dropdown">
-          <option value="student">Student</option>
-          <option value="job">Full Time Job</option>
-          <option value="learner">Full Time Learner</option>
-          <option value="preferNo">Prefer not to say</option>
-          <option value="other">other</option>
-        </select> <br>
+        <div class="label">
+          <label for="currentPos">Which option best describes your current role?</label>
+        </div>
+        <div class="options">
+          <select name="position" id="dropdown">
+            <optgroup label="Select an option">
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">other</option>
+            </optgroup>
+          </select>
+        </div>
 
       </div>
 
-      <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <div class="recommend">
 
-      <input type="radio" value="definitely" id="1st" name="radio-buttons"><label for="1st">Definitely</label><br>
+        <div class="label">
+          <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        </div>
 
-      <input type="radio" value="maybe" id="2nd" name="radio-buttons"><label for="2nd">Maybe</label><br>
+        <div class="options">
+          <input type="radio" value="definitely" id="1st" name="radio-buttons"><label for="1st">Definitely</label><br>
 
-      <input type="radio" value="not-sure" id="3rd" name="radio-buttons"><label for="3rd">Not sure</label><br>
+          <input type="radio" value="maybe" id="2nd" name="radio-buttons"><label for="2nd">Maybe</label><br>
+
+          <input type="radio" value="not-sure" id="3rd" name="radio-buttons"><label for="3rd">Not sure</label>
+        </div>
+      </div>
 
       <div class="most-like">
-        <label for="most-like">What do you like most in FCC:</label>
-        <select id="dropdown">
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="open-source">Open Source</option>
-        </select><br>
+        <div class="label">
+          <label for="most-like">What do you like most in FCC:</label>
+        </div>
+        <div class="options">
+          <select id="dropdown">
+            <optgroup label="Select an option">
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open-source">Open Source</option>
+            </optgroup>
+          </select>
+        </div>
 
       </div>
 
       <div class="like">
-        <label for="prefer">Things that should be improved in the future<br>
-          (Check all that apply):</label>
+        <div class="label">
+          <label for="prefer">Things that should be improved in the future<br>
+            (Check all that apply):</label></div>
         <div class="options">
           <input type="checkbox" id="1" value="front-end" name="prefer"><label for="1">Front-end Project</label><br>
           <input type="checkbox" id="2" value="back-end" name="prefer"><label for="2">Back-end Projects</label><br>
@@ -84,19 +114,26 @@
           <input type="checkbox" id="8" value="city-meetups" name="prefer"><label for="8">City Meetups</label><br>
           <input type="checkbox" id="9" value="wiki" name="prefer"><label for="9">Wiki</label><br>
           <input type="checkbox" id="10" value="forum" name="prefer"><label for="10">Forum</label><br>
-          <input type="checkbox" id="11" value="additional-courses" name="prefer"><label for="11">Additional Courses</label><br>
+          <input type="checkbox" id="11" value="additional-courses" name="prefer"><label for="11">Additional Courses</label>
         </div>
       </div>
 
       <div class="comments">
 
-        <label for="comments">Any Comments or Suggestions?</label>
-        <textarea name="user-comment" id="comments"></textarea><br>
+        <div class="label">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="options">
+          <textarea name="user-comment" id="comments"></textarea>
+        </div>
 
       </div>
 
-      <button type="submit" id="submit">Submit</button>
+      <div class="btn">
+        <button type="submit" id="submit">Submit</button>
+      </div>
 
+      <p>Made with ❤ by <a href="https://github.com/lastnamearya">lastnamearya</a></p>
     </form>
 
   </div>
