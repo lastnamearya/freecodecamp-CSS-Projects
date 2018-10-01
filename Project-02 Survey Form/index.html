@@ -12,21 +12,28 @@
 
 <body>
 
-  <h1 id="title">Survey Form</h1>
-
   <div id="form-outer">
+
+    <h1 id="title">Survey Form</h1>
 
     <p id="description">Let us know how we can improve freecodecamp</p>
 
     <form action="index.html" method="POST" id="survey-form">
-      <label for="name" id="name-label">* Name:</label>
-      <input type="text" id="name" name="user_name" placeholder="Enter your name" required><br>
 
-      <label for="email" id="email-label">* Email:</label>
-      <input type="email" id="email" name="user_email" placeholder="Enter your Email" required><br>
+      <div class="name">
+        <label for="name" id="name-label">* Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+      </div>
 
-      <label for="number" id="number-label">* Age:</label>
-      <input type="number" id="number" name="user_age" min="1" max="125" placeholder="Age" required><br>
+      <div class="mail">
+        <label for="email" id="email-label">* Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="age">
+        <label for="number" id="number-label">* Age:</label>
+        <input type="number" id="number" name="user_age" min="1" max="125" placeholder="Age" required><br>
+      </div>
 
       <label for="currentPos">Which option best describes your current role?</label>
       <select name="position" id="dropdown">
@@ -37,39 +44,55 @@
         <option value="other">other</option>
       </select> <br>
 
-      <label for="">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+
       <input type="radio" value="definitely" id="1st" name="radio-buttons"><label for="1st">Definitely</label><br>
+
       <input type="radio" value="maybe" id="2nd" name="radio-buttons"><label for="2nd">Maybe</label><br>
-      <input type="radio" value="not-sure" id="3rd" name="radio-buttons"><label for="3rd">Not sure</label>
 
-      <label for="most-like">What do you like most in FCC:</label>
-      <select id="dropdown">
-        <option value="challenges">Challenges</option>
-        <option value="projects">Projects</option>
-        <option value="community">Community</option>
-        <option value="open-source">Open Source</option>
-      </select>
+      <input type="radio" value="not-sure" id="3rd" name="radio-buttons"><label for="3rd">Not sure</label><br>
 
-      <label for="prefer">Things that should be improved in the future
-        (Check all that apply):</label>
-      <input type="checkbox" id="1" value="front-end" name="prefer"><label for="1">Front-end Project</label><br>
-      <input type="checkbox" id="2" value="back-end" name="prefer"><label for="2">Back-end Projects</label><br>
-      <input type="checkbox" id="3" value="data-visualization" name="prefer"><label for="3">Data Visualization</label><br>
-      <input type="checkbox" id="4" value="challenges" name="prefer"><label for="4">Challenges</label><br>
-      <input type="checkbox" id="5" value="open-source-community" name="prefer"><label for="5">Open Source Community</label><br>
-      <input type="checkbox" id="6" value="gitter-help-rooms" name="prefer"><label for="6">Gitter help rooms</label><br>
-      <input type="checkbox" id="7" value="videos" name="prefer"><label for="7">Videos</label><br>
-      <input type="checkbox" id="8" value="city-meetups" name="prefer"><label for="8">City Meetups</label><br>
-      <input type="checkbox" id="9" value="wiki" name="prefer"><label for="9">Wiki</label><br>
-      <input type="checkbox" id="10" value="forum" name="prefer"><label for="10">Forum</label><br>
-      <input type="checkbox" id="11" value="additional-courses" name="prefer"><label for="11">Additional Courses</label><br>
+      <div class="most-like">
+        <label for="most-like">What do you like most in FCC:</label>
+        <select id="dropdown">
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+        </select><br>
 
-      <label for="comments">Any Comments or Suggestions?</label>
-      <textarea name="user-comment" id="comments"></textarea>
+      </div>
+
+      <div class="like">
+        <label for="prefer">Things that should be improved in the future<br>
+          (Check all that apply):</label>
+        <div class="options">
+          <input type="checkbox" id="1" value="front-end" name="prefer"><label for="1">Front-end Project</label><br>
+          <input type="checkbox" id="2" value="back-end" name="prefer"><label for="2">Back-end Projects</label><br>
+          <input type="checkbox" id="3" value="data-visualization" name="prefer"><label for="3">Data Visualization</label><br>
+          <input type="checkbox" id="4" value="challenges" name="prefer"><label for="4">Challenges</label><br>
+          <input type="checkbox" id="5" value="open-source-community" name="prefer"><label for="5">Open Source
+            Community</label><br>
+          <input type="checkbox" id="6" value="gitter-help-rooms" name="prefer"><label for="6">Gitter help rooms</label><br>
+          <input type="checkbox" id="7" value="videos" name="prefer"><label for="7">Videos</label><br>
+          <input type="checkbox" id="8" value="city-meetups" name="prefer"><label for="8">City Meetups</label><br>
+          <input type="checkbox" id="9" value="wiki" name="prefer"><label for="9">Wiki</label><br>
+          <input type="checkbox" id="10" value="forum" name="prefer"><label for="10">Forum</label><br>
+          <input type="checkbox" id="11" value="additional-courses" name="prefer"><label for="11">Additional Courses</label><br>
+        </div>
+      </div>
+
+      <div class="comments">
+
+        <label for="comments">Any Comments or Suggestions?</label>
+        <textarea name="user-comment" id="comments"></textarea><br>
+
+      </div>
 
       <button type="submit" id="submit">Submit</button>
 
     </form>
+
   </div>
 </body>
 
