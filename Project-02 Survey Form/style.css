@@ -90,7 +90,7 @@ label {
   margin-top: 10px;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 700px) {
   #form-outer {
     max-width: 1000px;
     margin: 10px auto;
