@@ -94,6 +94,60 @@ label {
   margin-top: 10px;
 }
 
+@media all and (min-width: 900px) {
+  #form-outer {
+    max-width: 900px;
+    margin: 10px auto;
+  }
+
+  .basic-info {
+    margin: 40px auto 20px auto;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: 328px;
+  }
+
+  .name,
+  .mail,
+  .age {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name label,
+  .mail label,
+  .age label {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  .name input,
+  .mail input,
+  .age input {
+    margin-bottom: 0;
+    margin-right: 150px;
+  }
+
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  select {
+    width: 170px;
+  }
+
+  .option label {
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+}
+
 @media all and (max-width: 450px) {
   #form-outer {
     margin: 10px 15px;
