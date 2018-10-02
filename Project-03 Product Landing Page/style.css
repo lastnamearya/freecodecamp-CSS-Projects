@@ -11,6 +11,9 @@ body {
 header {
   color: white;
   text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .img {
@@ -113,7 +116,6 @@ nav ul {
 .subscription {
   font-family: "Klavika Medium", Arial, Sans-serif;
   text-align: center;
-  font-weight: 500;
   text-transform: capitalize;
 }
 
@@ -176,5 +178,10 @@ footer {
 
   .embed-video {
     padding: 10px;
+  }
+
+  .other-videos {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
