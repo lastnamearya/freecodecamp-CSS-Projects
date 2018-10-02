@@ -137,6 +137,7 @@ nav ul {
 
 form {
   display: flex;
+  box-shadow: 0 10px 10px rgba(200, 200, 200, 0.2);
 }
 
 input[type="email"] {
@@ -154,12 +155,12 @@ input[type="email"] {
 .btn {
   flex: 1;
   color: white;
-  background: #a82222;
+  background: #c62828;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
 }
 
 .btn:hover {
-  background: #c62828;
+  background: #a82222;
   cursor: pointer;
 }
 
@@ -183,7 +184,7 @@ footer a {
 
 footer p:first-child {
   padding-bottom: 4px;
-  border-bottom: 2px solid hsl(0, 98%, 22%);
+  border-bottom: 3px solid hsl(0, 98%, 22%);
 }
 
 footer p {
