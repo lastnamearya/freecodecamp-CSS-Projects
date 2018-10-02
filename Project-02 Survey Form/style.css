@@ -89,6 +89,10 @@ label {
   margin-top: 10px;
 }
 
+.heart {
+  color: red;
+}
+
 @media all and (min-width: 700px) {
   #form-outer {
     max-width: 1000px;
