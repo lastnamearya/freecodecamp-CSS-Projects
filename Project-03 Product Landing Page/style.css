@@ -87,8 +87,9 @@ nav ul {
   font-size: 24px;
 }
 
-.buy h2 {
-  margin-bottom: 0;
+.ufc {
+  width: 10%;
+  padding-top: 20px;
 }
 
 .mac {
@@ -103,13 +104,15 @@ nav ul {
   color: inherit;
 }
 
-.mac:hover {
+.mac a:hover {
   border-bottom: 3px solid #a82222;
   cursor: pointer;
 }
 
 .other-videos {
   margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   width: 75%;
   justify-content: space-around;
