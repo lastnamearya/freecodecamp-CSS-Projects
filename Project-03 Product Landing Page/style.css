@@ -167,7 +167,11 @@ footer {
   background: #a82222;
   margin-top: 140px;
   height: 80px;
+  color: #fff;
   border-bottom: 10px solid hsl(0, 98%, 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media all and (max-width: 480px) {
