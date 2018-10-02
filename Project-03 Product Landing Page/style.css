@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+header {
+  color: white;
+  text-transform: uppercase;
+}
+
+.img {
+  background: #c62828;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#header-img {
+  max-width: 100%;
+}
+
+#title {
+  font-weight: 200;
+  margin-left: 20px;
+  opacity: 0.87;
+  font-size: 1.45em;
+}
+
+nav {
+  background: #a82222;
+  height: 8vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation li {
+  padding: 5px 15px;
+  opacity: 0.8;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation li:hover {
+  opacity: 1;
+}
+
+/* Video Player */
+
+.embed-video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.buy {
+  font-family: "Klavika Medium", Arial, Sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.buy h2 {
+  margin-bottom: 0;
+}
+
+.mac {
+  color: #a82222;
+  margin-top: 7px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mac a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mac:hover {
+  border-bottom: 3px solid #a82222;
+  cursor: pointer;
+}
+
+.other-videos {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.subscription {
+  font-family: "Klavika Medium", Arial, Sans-serif;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.red {
+  color: firebrick;
+}
+
+footer {
+  background: #a82222;
+  margin-top: 80px;
+  height: 100px;
+  border-bottom: 10px solid hsl(0, 98%, 22%);
+}
+
+@media all and (max-width: 480px) {
+  .img {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .navigation li {
+    flex: 1;
+  }
+
+  #header-img {
+    margin-left: 10px;
+  }
+
+  .embed-video {
+    padding: 10px;
+  }
+}
