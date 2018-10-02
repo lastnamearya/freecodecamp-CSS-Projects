@@ -10,7 +10,6 @@ body {
 #form-outer {
   max-width: 450px;
   margin: 10px auto;
-  padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
 }
@@ -93,7 +92,7 @@ label {
 @media all and (min-width: 700px) {
   #form-outer {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 40px auto;
     padding: 20px 40px;
   }
 
@@ -170,7 +169,7 @@ label {
   }
 
   button {
-    width: 128px;
+    width: 160px;
     height: 48px;
     text-align: center;
     font-size: 1.2em;
@@ -180,7 +179,8 @@ label {
 
 @media all and (max-width: 450px) {
   #form-outer {
-    margin: 10px 15px;
+    margin: 0;
+    padding: 10px 20px;
   }
 
   input[type="text"],
